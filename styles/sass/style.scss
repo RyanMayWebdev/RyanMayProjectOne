@@ -1,0 +1,62 @@
+@import 'setup';
+/*=====================
+END NORMALIZE
+=======================*/
+@import 'variables';
+
+
+
+/*=====================
+GLOBALS
+=======================*/  
+html {
+    font-size: 125%;
+}
+
+body{
+    background: $backgroundPrimary;
+}
+
+img{
+    width: 100%;
+}
+
+.mainWrapper {
+    max-width: 1440px;
+}
+
+/*=====================
+TYPOGRAPHY
+=======================*/ 
+body{
+    color: $mainFontColour;
+    font-family: 'Chathura', sans-serif;
+}
+
+h1,h3, .btn {
+    font-family: 'Tulpen One', cursive;
+}
+
+.home h1{
+    color:$mainHeaderAndAccent;
+    font-size: 13.07rem;
+}
+
+h1 span{
+    font-family: 'Chathura', sans-serif;
+    font-size: 4.16rem;
+}
+
+/*=====================
+HEADER
+=======================*/ 
+.home{
+    background: url($mainHeaderImage) center;
+    height: 75vh;
+    position:relative;
+}
+
+.headerImgBox {
+    right: 0;
+    position: absolute;
+}
