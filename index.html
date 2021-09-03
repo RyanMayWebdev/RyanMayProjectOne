@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar One</title>
+    <script src="https://kit.fontawesome.com/b590f622e8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
@@ -15,49 +16,72 @@
 
 <body>
     <div class="mainWrapper">
-        <header class="home"id="home">
+        <header class="home" id="home">
             <nav class="desktopNav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li>
-                    <h3>Bar-One</h3>
-                </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <ul class="navContainer">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li>
+                        <p class="logo">Bar-One</p>
+                    </li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
             </nav>
-            <h1>Bar-One<span>Place to be</span></h1>
-            <div class="headerImgBox"><img src="./assets/header-box.jpg"
-                    alt="Grayscale image of wine glasses hanging from a rack"></div>
+            <nav class="mobileNav">
+                <p class="logo">Bar-One</p><i class="fas fa-bars"></i>
+            </nav>
+            <div class="titleContainer">
+                <h1>Bar-One<span>Place to be</span></h1>
+                <div class="headerImgBox">
+                    <img src="./assets/header-box.jpg" alt="Grayscale image of wine glasses hanging from a rack">
+                </div>
+            </div>
         </header>
         <main>
-            <section class="flexContainer">
+            <section id="about" class="flexContainer">
                 <article class="textContainer">
-                    <h2>New Space</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
-                        nisi. Fusce auctor erat ac sagittis mattis. Mauris
-                        tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    <i class="fas fa-home"></i>
+                    <div>
+                        <h2>New Space</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
+                            nisi. Fusce auctor erat ac sagittis mattis. Mauris
+                            tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
                 </article>
                 <article class="textContainer">
-                    <h2>Community</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
-                        nisi. Fusce auctor erat ac sagittis mattis. Mauris
-                        tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h2>Community</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
+                            nisi. Fusce auctor erat ac sagittis mattis. Mauris
+                            tempus velit sem, sit amet imperdiet dolor placerat.</p>
+
+                    </div>
                 </article>
                 <article class="textContainer">
-                    <h2>Blog</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
-                        nisi. Fusce auctor erat ac sagittis mattis. Mauris
-                        tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    <i class="fas fa-file"></i>
+                    <div>
+                        <h2>Blog</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
+                            nisi. Fusce auctor erat ac sagittis mattis. Mauris
+                            tempus velit sem, sit amet imperdiet dolor placerat.</p>
+
+                    </div>
                 </article>
                 <article class="textContainer">
-                    <h2>Get in Touch</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
-                        nisi. Fusce auctor erat ac sagittis mattis. Mauris
-                        tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h2>Get in Touch</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit
+                            nisi. Fusce auctor erat ac sagittis mattis. Mauris
+                            tempus velit sem, sit amet imperdiet dolor placerat.</p>
+
+                    </div>
                 </article>
             </section>
 
-            <section class="colouredBackground">
+            <section class="colouredBackground flexContainer">
                 <div class="imageLeft">
                     <img src="./assets/left-image.jpg"
                         alt="A fancy bar with many hanging incandescent bulbs providing the bar with an orange hue.">
@@ -78,14 +102,14 @@
                         eu. Sed urna ex, porttitor nec ioculis at,</p>
                     <a class="btn" href="#">Read More</a>
                 </div>
-                <div class="imageright">
+                <div class="imageRight">
                     <img src="./assets/right-image.jpg"
                         alt="Two people sit on the far left side of a bar by a bright window, many empty bar stools are lined up to the right of them.">
                 </div>
             </section>
 
             <section>
-                <article>
+                <article class="centered">
                     <h2 class="colouredHeader">Want to host a party?</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum.
                         Nam
@@ -97,18 +121,23 @@
                 <div class="banner">
                     <img src="./assets/banner-image.jpg" alt="A pint of beer placed on the end of a wooden bar top">
                 </div>
-                <article>
+                <article class="events">
                     <div class="smallLeftImage">
                         <img src="./assets/small-box-image.jpg"
                             alt="Two people laughing while holding drinks in their hands">
                     </div>
-                    <h2 class="colouredHeader">Events</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nullo elementum
-                        eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis
-                        convallis dapibus nulla pulvinar tortor. Lorem ips dolor sit amet, consectetur adipiscing elit.
-                        Nulla pulvinar tortor nulla eleifend. Vestibulum consequat vestibulum felis pharetra luctus.
-                        Quisque
-                        interdum orci quis convallis.</p>
+                    <div class="textContent">
+                        <h2 class="colouredHeader">Events</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nullo
+                            elementum
+                            eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis
+                            convallis dapibus nulla pulvinar tortor. Lorem ips dolor sit amet, consectetur adipiscing
+                            elit.
+                            Nulla pulvinar tortor nulla eleifend. Vestibulum consequat vestibulum felis pharetra luctus.
+                            Quisque
+                            interdum orci quis convallis.</p>
+                        <a class="btn" href="#">Find Out More</a>
+                    </div>
                 </article>
             </section>
             <section class="gallery colouredBackground">
