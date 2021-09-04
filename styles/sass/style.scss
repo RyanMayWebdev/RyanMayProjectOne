@@ -3,6 +3,7 @@
 END NORMALIZE
 =======================*/
 @import 'variables';
+@import 'blog';
 
 
 
@@ -174,27 +175,45 @@ Main
     padding: 5px 35px;
 }
 
-.centered {
+.btn:hover, .btn:focus {
+    background-color: $mainHeaderAndAccent;
+}
+
+.centered,
+.flexContainer,
+.rightTextContainer,
+.leftTextContainer,
+.textContainer,
+.events,
+.textContent,
+.gallery,
+.galleryContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto 100px;
-    text-align: center;
-    width: 70%;
 }
 
-.colouredHeader {
-    color: $mainHeaderAndAccent;
-    margin: 30px;
+.colouredBackground,
+.rightTextContainer,
+.leftTextContainer,
+.textContent {
+    flex-direction: column;
 }
 
+/*=====================
+ABOUT
+=======================*/
 .flexContainer {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 100px auto;
     width: 80%;
 }
+
+.textContainer {
+    align-items: baseline;
+    margin: 40px 0;
+    width: 50%;
+}
+
 
 .textContainer .fas {
     background: $buttonIconColour;
@@ -207,10 +226,11 @@ Main
     width: 30px;
 }
 
-
+/*=====================
+PLANNING
+=======================*/
 .colouredBackground {
     background-color: $backgroundSecondary;
-    flex-direction: column;
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -242,8 +262,6 @@ Main
 
 .rightTextContainer,
 .leftTextContainer {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 33%;
 }
@@ -261,15 +279,23 @@ Main
     margin: 100px 115px 50px;
 }
 
-.textContainer {
-    align-items: baseline;
-    display: flex;
-    margin: 40px 0;
-    width: 50%;
+/*=====================
+EVENTS
+=======================*/
+.centered {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto 100px;
+    text-align: center;
+    width: 70%;
+}
+
+.colouredHeader {
+    color: $mainHeaderAndAccent;
+    margin: 30px;
 }
 
 .events {
-    display: flex;
     justify-content: space-between;
     margin: 100px auto;
     width: 80%;
@@ -283,8 +309,6 @@ Main
 
 .textContent {
     align-items: flex-start;
-    display: flex;
-    flex-direction: column;
     margin-left: 95px;
     width: 65%;
 
@@ -293,13 +317,15 @@ Main
     }
 }
 
+/*=====================
+GALLERY
+=======================*/
+
 .gallery {
     align-items: center;
-    display: flex;
 }
 
 .galleryContainer {
-    display: flex;
     justify-content: space-evenly;
     margin: 100px 0;
     width: 88%;
@@ -322,144 +348,8 @@ footer {
     }
 }
 
-// @media (max-width:1000px) {
-//     .headerImgBox {
-//         width: 60%;
-// margin-top: -200px;
-//     }
-// }
+/*=====================
+MEDIA QUERIES
+=======================*/
 
-@media (max-width: 1000px) {
-    .home {
-        margin-bottom: 60%;
-    }
-
-    .headerImgBox {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 800px) {
-
-    .desktopNav {
-        display: none;
-    }
-
-    .mobileNav {
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-
-        .logo{
-            font-size: 2.5rem;
-        }
-    }
-
-    .textContainer {
-        width: 100%;
-
-        h2 {
-            text-align: center;
-        }
-    }
-
-    .flexContainer, .textContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .rightTextContainer {
-        align-items: center;
-        align-self: unset;
-    }
-
-    .colouredBackground {
-        align-items: center;
-    }
-
-    .rightTextContainer,.leftTextContainer {
-        width: 80%;
-        margin: 50px 0;
-    }
-
-    .leftTextContainer {
-        align-items: center;
-        align-self: unset;
-        text-align: left;
-    }
-
-    .imageRight {
-        right:unset;
-    }
-
-    .imageLeft {
-        margin-bottom: unset;
-    }
-    .events {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .galleryContainer {
-        flex-direction: column;
-
-        img {
-            width: 90%;
-            margin: 30px auto;
-        }
-    }
-
-    .imageRight, .imageLeft {
-        position: relative;
-        width: 80%;
-    }
-
-    .smallLeftImage {
-        width: 50%;
-        margin: 100px auto;
-    }
-    
-    .textContent {
-        align-items: center;
-        margin: 0 auto;
-        width: 80%
-    }
-
-    .centered {
-        text-align: left;
-        width: 80%;
-
-        h2 {
-            text-align: center;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .home {
-        margin-bottom: 40%;
-
-        h1 {
-            font-size: 10rem;
-
-            span {
-                font-size: 3rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    .home {
-        margin-bottom: 30%;
-
-        h1 {
-            font-size: 8rem;
-
-            span {
-                font-size: 2.5rem;
-            }
-        }
-    }
-}
+@import 'mediaQueries';

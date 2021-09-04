@@ -1,0 +1,157 @@
+@media (max-width: 1000px) {
+    .home {
+        margin-bottom: 60%;
+    }
+
+    .headerImgBox {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+/*=====================
+NAV
+=======================*/
+    .desktopNav {
+        display: none;
+    }
+
+    .flexContainer,
+    .textContainer,
+    .mobileNav,
+    .rightTextContainer,
+    .colouredBackground,
+    .leftTextContainer,
+    .textContent {
+        align-items: center;
+    }
+
+    .mobileNav {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        .logo {
+            font-size: 2.5rem;
+        }
+
+        .fas:hover, .fas:focus {
+            color: $mainHeaderAndAccent;
+        }
+    }
+/*=====================
+MAIN
+=======================*/
+    .textContainer {
+        width: 100%;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .flexContainer,
+    .textContainer,
+    .events,
+    .galleryContainer {
+        flex-direction: column;
+    }
+
+
+    .rightTextContainer,
+    .leftTextContainer,
+    .textContent,
+    .centered,
+    .imageRight,
+    .imageLeft {
+        width: 80%;
+    }
+
+    .rightTextContainer {
+        align-self: unset;
+    }
+
+
+    .rightTextContainer,
+    .leftTextContainer {
+        margin: 50px 0;
+    }
+
+    .leftTextContainer {
+        align-self: unset;
+        text-align: left;
+    }
+
+    .imageRight {
+        right: unset;
+    }
+
+    .imageLeft {
+        margin-bottom: unset;
+    }
+
+    .events {
+        width: 100%;
+    }
+
+    .galleryContainer img {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .imageRight,
+    .imageLeft {
+        position: relative;
+    }
+
+    .smallLeftImage {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .textContent {
+        margin: 0 auto;
+    }
+
+    .centered {
+        text-align: left;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        margin-bottom: 40%;
+
+        h1 {
+            font-size: 10rem;
+
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        margin-bottom: 30%;
+
+        h1 {
+            font-size: 8rem;
+
+            span {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .colouredHeader {
+        margin: 10px 0;
+    }
+}

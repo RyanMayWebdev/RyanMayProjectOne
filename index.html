@@ -28,8 +28,8 @@
                     <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <nav class="mobileNav">
-                <p class="logo">Bar-One</p><i class="fas fa-bars"></i>
+            <nav class="mobileNav" tabindex="1" aria-hidden="false">
+                <p class="logo">Bar-One</p><i id ="dropdown" class="fas fa-bars" tabindex="2" aria-hidden="false"></i>
             </nav>
             <div class="titleContainer">
                 <h1>Bar-One<span>Place to be</span></h1>
@@ -81,7 +81,7 @@
                 </article>
             </section>
 
-            <section class="colouredBackground flexContainer">
+            <section id="planning" class="colouredBackground flexContainer">
                 <div class="imageLeft">
                     <img src="./assets/left-image.jpg"
                         alt="A fancy bar with many hanging incandescent bulbs providing the bar with an orange hue.">
@@ -108,7 +108,7 @@
                 </div>
             </section>
 
-            <section>
+            <section id="events">
                 <article class="centered">
                     <h2 class="colouredHeader">Want to host a party?</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum.
@@ -121,7 +121,7 @@
                 <div class="banner">
                     <img src="./assets/banner-image.jpg" alt="A pint of beer placed on the end of a wooden bar top">
                 </div>
-                <article class="events">
+                <article  class="events">
                     <div class="smallLeftImage">
                         <img src="./assets/small-box-image.jpg"
                             alt="Two people laughing while holding drinks in their hands">
@@ -140,7 +140,7 @@
                     </div>
                 </article>
             </section>
-            <section class="gallery colouredBackground">
+            <section id="gallery" class="gallery colouredBackground">
                 <div class=galleryContainer>
                     <img src="./assets/gallery-image-1.jpg"
                         alt="A shiny bar top with a prep station, backdropped by many different glasses and alcohol bottles on shelves">
