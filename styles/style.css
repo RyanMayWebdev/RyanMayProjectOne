@@ -159,6 +159,7 @@ END NORMALIZE
   background: url(./../assets/blog-header-1.jpg) center;
   background-size: cover;
   height: 50vh;
+  margin-bottom: -200px;
 }
 .blog h1 {
   font-family: "Chathura", sans-serif;
@@ -170,27 +171,21 @@ END NORMALIZE
   color: #ff8327;
 }
 
-main {
-  position: relative;
+.blogContainer, aside, .post, .comment, .commentForm, .inputContainer, .inputSubContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.blogContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 300px;
-  position: absolute;
-  top: -400px;
-}
-.blogContainer aside {
-  background-color: #220303;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+aside, .post, .commentForm, .inputSubContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.blogContainer aside {
+  background-color: #220303;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
@@ -198,9 +193,9 @@ main {
   margin: 350px 100px 0 75px;
 }
 .blogContainer aside .asideImage {
+  position: relative;
   right: 80px;
   top: -20px;
-  position: relative;
   width: 110%;
 }
 .blogContainer aside .asideText {
@@ -231,13 +226,6 @@ main {
 .blogContainer .rightContainer .post {
   -webkit-box-shadow: -5px 5px #ff8327;
           box-shadow: -5px 5px #ff8327;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
   top: 30px;
 }
@@ -245,14 +233,112 @@ main {
   -webkit-box-shadow: -20px 20px #ff8327;
           box-shadow: -20px 20px #ff8327;
   left: 15px;
-  top: -25px;
   position: relative;
+  top: -25px;
 }
 .blogContainer .rightContainer .post .postText {
   padding: 110px 100px 80px;
 }
+.blogContainer .rightContainer .post .postText h3 {
+  color: #ff8327;
+  font-size: 1.95rem;
+  margin: -10px 0 20px;
+}
 .blogContainer .rightContainer .post .postText p {
   margin-bottom: 30px;
+}
+.blogContainer .commentsContainer {
+  margin: 80px auto;
+  width: 85%;
+}
+.blogContainer .commentsContainer h2 {
+  margin: 0 0 0 10px;
+}
+.blogContainer .commentsContainer .comment {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 0;
+}
+.blogContainer .commentsContainer .comment .profileImage {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%;
+}
+.blogContainer .commentsContainer .comment .commentText {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+  margin: -15px 0 0 20px;
+}
+.blogContainer .commentsContainer .comment .commentText h3 {
+  color: #ff8327;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.blogContainer .commentsContainer .commentForm {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+.blogContainer .commentsContainer .commentForm label,
+.blogContainer .commentsContainer .commentForm .messageBox,
+.blogContainer .commentsContainer .commentForm input {
+  font-size: 1.95rem;
+  font-weight: normal;
+  letter-spacing: 0.095rem;
+  line-height: 1.5rem;
+}
+.blogContainer .commentsContainer .commentForm .btn {
+  border: none;
+  width: 95%;
+}
+.blogContainer .commentsContainer .commentForm .commentLabel {
+  left: 20px;
+  position: absolute;
+  top: 175px;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+  width: 94%;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
+  width: 45%;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer label {
+  margin-left: 20px;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer input {
+  background-color: #111010;
+  border: none;
+  border-bottom: 1px solid #ff8327;
+  color: #ffffff;
+  width: 100%;
+}
+.blogContainer .commentsContainer .commentForm .messageBox {
+  background-color: #111010;
+  border: 1px solid #ff8327;
+  color: #ffffff;
+  height: 125px;
+  overflow: hidden;
+  padding: 75px 20px;
+  resize: none;
+  width: 90%;
+}
+.blogContainer .commentsContainer .commentForm .messageBox:active, .blogContainer .commentsContainer .commentForm .messageBox:focus {
+  overflow: auto;
+}
+.blogContainer .commentsContainer .commentForm .messageBox:focus ~ .commentLabel,
+.blogContainer .commentsContainer .commentForm .messageBox:active ~ .commentLabel {
+  display: none;
+}
+
+footer {
+  position: relative;
 }
 
 /*=====================
@@ -267,7 +353,24 @@ body {
 }
 
 a {
+  position: relative;
   text-decoration: none;
+}
+
+nav a::after, aside a:after {
+  border-bottom: 1px solid #ff8327;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 40px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 0%;
+}
+
+a:hover::after, a:focus::after {
+  width: 100%;
 }
 
 img {
@@ -639,6 +742,48 @@ MEDIA QUERIES
     margin-top: 0;
   }
 }
+/*=====================
+BLOG
+=======================*/
+@media (max-width: 920px) {
+  .blog {
+    margin-bottom: 0;
+  }
+  .blog h1 {
+    margin: 100px 0;
+    text-align: center;
+  }
+
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContainer aside {
+    margin: 0;
+  }
+  .blogContainer aside .asideImage {
+    margin: 50px auto;
+    position: unset;
+    width: 50%;
+  }
+  .blogContainer aside div:nth-of-type(2) {
+    text-align: center;
+  }
+  .blogContainer aside .asideText {
+    padding: 0;
+    margin: 0 auto 20px;
+    width: 80%;
+  }
+  .blogContainer aside .asideText h2 {
+    text-align: center;
+  }
+  .blogContainer aside .asideText ul {
+    margin: 0 auto;
+    widtH: 40%;
+  }
+}
 @media (max-width: 800px) {
   /*=====================
   NAV
@@ -670,7 +815,8 @@ MEDIA QUERIES
   .mobileNav .logo {
     font-size: 2.5rem;
   }
-  .mobileNav .fas:hover, .mobileNav .fas:focus {
+  .mobileNav .fas:hover,
+.mobileNav .fas:focus {
     color: #ff8327;
   }
 
@@ -766,6 +912,46 @@ MEDIA QUERIES
   }
   .home h1 span {
     font-size: 3rem;
+  }
+
+  /*=====================
+  BLOG
+  =======================*/
+  .blogContainer aside .asideText ul {
+    width: 90%;
+  }
+  .blogContainer .rightContainer .post .postText {
+    padding: 20px;
+  }
+  .blogContainer .commentsContainer .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContainer .commentsContainer .comment .profileImage {
+    margin: 30px 0;
+    width: 30%;
+  }
+  .blogContainer .commentsContainer .comment .commentText {
+    margin: 0;
+  }
+  .blogContainer .commentsContainer .commentForm .commentLabel {
+    top: 315px;
+  }
+  .blogContainer .commentsContainer .commentForm .inputContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
+    margin-top: 20px;
+    width: 100%;
   }
 }
 @media (max-width: 400px) {

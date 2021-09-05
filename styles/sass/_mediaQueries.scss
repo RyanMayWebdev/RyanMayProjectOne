@@ -9,9 +9,61 @@
     }
 }
 
+/*=====================
+BLOG
+=======================*/
+@media(max-width: 920px) {
+    .blog {
+        margin-bottom: 0;
+
+        h1 {
+            margin: 100px 0;
+            text-align: center;
+        }
+
+    }
+
+    .blogContainer {
+        flex-direction: column;
+
+        aside {
+            margin: 0;
+
+            .asideImage {
+                margin: 50px auto;
+                position: unset;
+                width: 50%;
+            }
+
+            div:nth-of-type(2) {
+                text-align: center;
+            }
+
+            .asideText {
+                padding: 0;
+                margin: 0 auto 20px;
+                width: 80%;
+
+                h2 {
+                    text-align: center;
+                }
+
+                ul {
+                    margin: 0 auto;
+                    widtH: 40%;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
 @media (max-width: 800px) {
 
-/*=====================
+    /*=====================
 NAV
 =======================*/
     .desktopNav {
@@ -37,11 +89,13 @@ NAV
             font-size: 2.5rem;
         }
 
-        .fas:hover, .fas:focus {
+        .fas:hover,
+        .fas:focus {
             color: $mainHeaderAndAccent;
         }
     }
-/*=====================
+
+    /*=====================
 MAIN
 =======================*/
     .textContainer {
@@ -136,6 +190,66 @@ MAIN
             }
         }
     }
+
+
+    /*=====================
+BLOG
+=======================*/
+
+    .blogContainer {
+
+        aside {
+            .asideText {
+                ul {
+                    width: 90%;
+                }
+            }
+        }
+
+        .rightContainer {
+            .post {
+                .postText {
+                    padding: 20px;
+                }
+            }
+        }
+
+
+        .commentsContainer {
+            .comment {
+                flex-direction: column;
+
+                .profileImage {
+                    margin: 30px 0;
+                    width: 30%;
+                }
+
+                .commentText {
+                    margin: 0;
+                }
+            }
+
+            .commentForm {
+                .commentLabel {
+                    top: 315px;
+                }
+
+                .inputContainer {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .inputSubContainer {
+                        margin-top: 20px;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+    }
+
 }
 
 @media (max-width: 400px) {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar-One Blog</title>
+    <script src="https://kit.fontawesome.com/b590f622e8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
@@ -46,10 +47,18 @@
                     <div class="asideText">
                         <h2>Recent Posts</h2>
                         <ul>
-                            <li><p>Danec facilisis tortor ut</p></li>
-                            <li><p>Augue lacinia at viverra</p></li>
-                            <li><p>Semper sed sapien metus</p></li>
-                            <li><p>Scelerisque nec pharetra id</p></li>
+                            <li>
+                                <p>Danec facilisis tortor ut</p>
+                            </li>
+                            <li>
+                                <p>Augue lacinia at viverra</p>
+                            </li>
+                            <li>
+                                <p>Semper sed sapien metus</p>
+                            </li>
+                            <li>
+                                <p>Scelerisque nec pharetra id</p>
+                            </li>
                         </ul>
                     </div>
 
@@ -84,37 +93,49 @@
                                 tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehiculo.</p>
                         </div>
                     </article>
-                    <h2>Comments:</h2>
-                    <article class="comment">
-                        <div class="profileImage"><img src="./assets/comment-image-1.jpg"
-                                alt="A profile image of a woman wearing a white tank top"></div>
-                        <h3>Tueaday October 9th, 2019 by Sulaire</h3>
-                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec, Donec viverra eleifend lacus,
-                            vitae
-                            ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
-                            scelerisque ligula. Maecenas eu varius risus..</p>
-                    </article>
-                    <article class="comment">
-                        <div class="profileImage"><img src="./assets/comment-image-2.jpg"
-                                alt="A profile image of a man with a dark beard and long hair."></div>
-                        <h3>Wednesday October 10th, 2019 by Renzo</h3>
-                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc
-                            sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
-                    </article>
+                    <div class="commentsContainer">
+                        <h2>Comments:</h2>
+                        <article class="comment">
+                            <div class="profileImage"><img src="./assets/comment-image-1.jpg"
+                                    alt="A profile image of a woman wearing a white tank top"></div>
+                            <div class="commentText">
+                                <h3>Tuesday October 9th, 2019 by Sulaire</h3>
+                                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                    lacus,
+                                    vitae
+                                    ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                                    euismod
+                                    scelerisque ligula. Maecenas eu varius risus..</p>
+                            </div>
+                        </article>
+                        <article class="comment">
+                            <div class="profileImage"><img src="./assets/comment-image-2.jpg"
+                                    alt="A profile image of a man with a dark beard and long hair."></div>
+                            <div class="commentText">
+                                <h3>Wednesday October 10th, 2019 by Renzo</h3>
+                                <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis
+                                    nunc
+                                    sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
+                            </div>
+                        </article>
 
-                    <form class="commentForm" action="#" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email address">
-                        <label for="comment">Comment</label>
-                        <input type="text" name="comment" id="comment" placeholder="Comment">
-                        <button type="submit">Post Comment</button>
-                    </form>
+                        <form class="commentForm" action="#" method="post">
+                            <div class="inputContainer">
+                                <div class="inputSubContainer">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="inputSubContainer">
+                                    <label for="email">Email address</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <textarea class="messageBox" name="comment" id="comment"></textarea>
+                            <label class="commentLabel" for="comment">Comment</label>
+                            <button class="btn" type="submit">Post Comment</button>
+                        </form>
+                    </div>
                 </div>
-            </section>
-            <section class="comments">
-
             </section>
         </main>
         <footer>

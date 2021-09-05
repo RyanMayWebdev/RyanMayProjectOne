@@ -19,7 +19,23 @@ body {
 }
 
 a {
+    position: relative;
     text-decoration: none;
+}
+
+nav a::after, aside a:after {
+    border-bottom: 1px solid $mainHeaderAndAccent;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    transition: width 0.5s;
+    width: 0%;
+}
+
+a:hover::after, a:focus::after {
+    width:100%;
 }
 
 img {
