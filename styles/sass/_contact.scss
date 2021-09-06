@@ -1,0 +1,114 @@
+.contact {
+    background: url(./../assets/contact-header-1.jpg) center;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: -180px;
+
+    h1 {
+        font-family: "Chathura", sans-serif;
+        font-size: 6.7rem;
+        font-weight: normal;
+        margin: 150px 0 0 70px;
+    }
+
+    .desktopNav li:nth-of-type(5) a {
+        color: $mainHeaderAndAccent;
+    }
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 200px;
+    width: 90%;
+
+    .contactInfoContainer {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 75px;
+        width: 25%;
+
+        span {
+            display: block;
+        }
+
+        a {
+            color: $mainFontColour;
+        }
+
+        a:hover, a:focus {
+            color: $mainHeaderAndAccent;
+        }
+
+        .email {
+            margin: 20px 0;
+        }
+
+        .socialIcons  ul{
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+        }
+    }
+
+    .contactForm {
+        background-color: $backgroundSecondary;
+        box-shadow: 25px 25px $mainHeaderAndAccent;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        position: relative;
+        width: 65%;
+
+        .btn {
+            margin: 0;
+        }
+
+        .contactInputContainer {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                width: 48%;
+
+                label {
+                    margin-left: 30px;
+                }
+
+                input {
+                    background-color: #ffffff00;
+                    border: none;
+                    border-bottom: 1px solid $mainFontColour;
+                    margin-top: -30px;
+                }
+            }
+        }
+
+        .messageLabel {
+            left: 80px;
+            position: absolute;
+            top: 220px;
+        }
+
+        .contactMessage {
+            background-color: $backgroundSecondary;
+            height: 250px;
+            padding-top: 75px;
+            margin-bottom: 50px;
+        }
+
+        .contactMessage:active,.contactMessage:focus {
+            overflow: auto;
+        }
+
+        .contactMessage:focus ~ .messageLabel,
+        .contactMessage:active ~ .messageLabel {
+            display: none;
+        }
+    }
+}

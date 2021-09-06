@@ -1,9 +1,21 @@
 @charset "UTF-8";
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
 }
 
@@ -26,7 +38,8 @@ a:focus {
   outline: thin dotted;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -38,7 +51,8 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
 
@@ -51,7 +65,10 @@ mark {
   color: #000;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -69,7 +86,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -98,26 +116,35 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   line-height: normal;
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -129,11 +156,13 @@ input[type=search] {
   box-sizing: content-box;
 }
 
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 textarea {
+  resize: none;
   overflow: auto;
   vertical-align: top;
 }
@@ -143,11 +172,14 @@ table {
   border-spacing: 0;
 }
 
-body, figure {
+body,
+figure {
   margin: 0;
 }
 
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -282,14 +314,6 @@ aside, .post, .commentForm, .inputSubContainer {
       flex-wrap: wrap;
   position: relative;
 }
-.blogContainer .commentsContainer .commentForm label,
-.blogContainer .commentsContainer .commentForm .messageBox,
-.blogContainer .commentsContainer .commentForm input {
-  font-size: 1.95rem;
-  font-weight: normal;
-  letter-spacing: 0.095rem;
-  line-height: 1.5rem;
-}
 .blogContainer .commentsContainer .commentForm .btn {
   border: none;
   width: 95%;
@@ -304,7 +328,7 @@ aside, .post, .commentForm, .inputSubContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 30px 0;
-  width: 94%;
+  width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
   width: 45%;
@@ -316,18 +340,16 @@ aside, .post, .commentForm, .inputSubContainer {
   background-color: #111010;
   border: none;
   border-bottom: 1px solid #ff8327;
-  color: #ffffff;
   width: 100%;
 }
 .blogContainer .commentsContainer .commentForm .messageBox {
   background-color: #111010;
   border: 1px solid #ff8327;
-  color: #ffffff;
   height: 125px;
   overflow: hidden;
-  padding: 75px 20px;
+  padding: 75px 0;
   resize: none;
-  width: 90%;
+  width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .messageBox:active, .blogContainer .commentsContainer .commentForm .messageBox:focus {
   overflow: auto;
@@ -341,6 +363,132 @@ footer {
   position: relative;
 }
 
+.contact {
+  background: url(./../assets/contact-header-1.jpg) center;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: -180px;
+}
+.contact h1 {
+  font-family: "Chathura", sans-serif;
+  font-size: 6.7rem;
+  font-weight: normal;
+  margin: 150px 0 0 70px;
+}
+.contact .desktopNav li:nth-of-type(5) a {
+  color: #ff8327;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 200px;
+  width: 90%;
+}
+.contactContainer .contactInfoContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 75px;
+  width: 25%;
+}
+.contactContainer .contactInfoContainer span {
+  display: block;
+}
+.contactContainer .contactInfoContainer a {
+  color: #ffffff;
+}
+.contactContainer .contactInfoContainer a:hover, .contactContainer .contactInfoContainer a:focus {
+  color: #ff8327;
+}
+.contactContainer .contactInfoContainer .email {
+  margin: 20px 0;
+}
+.contactContainer .contactInfoContainer .socialIcons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+.contactContainer .contactForm {
+  background-color: #220303;
+  -webkit-box-shadow: 25px 25px #ff8327;
+          box-shadow: 25px 25px #ff8327;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  position: relative;
+  width: 65%;
+}
+.contactContainer .contactForm .btn {
+  margin: 0;
+}
+.contactContainer .contactForm .contactInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+.contactContainer .contactForm .contactInputContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  width: 48%;
+}
+.contactContainer .contactForm .contactInputContainer div label {
+  margin-left: 30px;
+}
+.contactContainer .contactForm .contactInputContainer div input {
+  background-color: #ffffff00;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: -30px;
+}
+.contactContainer .contactForm .messageLabel {
+  left: 80px;
+  position: absolute;
+  top: 220px;
+}
+.contactContainer .contactForm .contactMessage {
+  background-color: #220303;
+  height: 250px;
+  padding-top: 75px;
+  margin-bottom: 50px;
+}
+.contactContainer .contactForm .contactMessage:active, .contactContainer .contactForm .contactMessage:focus {
+  overflow: auto;
+}
+.contactContainer .contactForm .contactMessage:focus ~ .messageLabel,
+.contactContainer .contactForm .contactMessage:active ~ .messageLabel {
+  display: none;
+}
+
 /*=====================
 GLOBALS
 =======================*/
@@ -350,6 +498,18 @@ html {
 
 body {
   background: #111010;
+}
+
+.btn {
+  background-color: #bf2603;
+  border: none;
+  color: #ffffff;
+  margin: 40px 0 50px;
+  padding: 5px 35px;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #ff8327;
 }
 
 a {
@@ -402,6 +562,16 @@ body {
   font-weight: normal;
 }
 
+label,
+textarea,
+input {
+  color: #ffffff;
+  font-size: 1.95rem;
+  font-weight: normal;
+  letter-spacing: 0.095rem;
+  line-height: 1.5rem;
+}
+
 h1,
 .logo,
 .btn {
@@ -439,7 +609,7 @@ h2 {
   margin: 0;
 }
 
-p {
+p, .email a {
   font-size: 1.95rem;
   font-weight: normal;
   line-height: 1.5rem;
@@ -524,17 +694,6 @@ header {
 /*=====================
 Main
 =======================*/
-.btn {
-  background-color: #bf2603;
-  color: #ffffff;
-  margin: 40px 0 50px;
-  padding: 5px 35px;
-}
-
-.btn:hover, .btn:focus {
-  background-color: #ff8327;
-}
-
 .centered,
 .flexContainer,
 .rightTextContainer,
@@ -783,6 +942,44 @@ BLOG
     margin: 0 auto;
     widtH: 40%;
   }
+
+  /*=====================
+  CONTACT
+  =======================*/
+  .contactContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactContainer .contactInfoContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+  .contactContainer .contactInfoContainer .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+  .contactContainer .contactInfoContainer .socialIcons ul {
+    width: 100%;
+  }
+  .contactContainer .contactForm {
+    width: 90%;
+  }
 }
 @media (max-width: 800px) {
   /*=====================
@@ -952,6 +1149,28 @@ BLOG
   .blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
     margin-top: 20px;
     width: 100%;
+  }
+
+  /*=====================
+  CONTACT
+  =======================*/
+  .contact h1 {
+    margin: 150px 0;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .contactContainer .contactForm .contactInputContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .contactForm .contactInputContainer div {
+    width: 100%;
+  }
+  .contactContainer .contactForm .messageLabel {
+    top: 320px;
   }
 }
 @media (max-width: 400px) {

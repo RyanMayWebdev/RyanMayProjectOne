@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar-One Contact</title>
+    <script src="https://kit.fontawesome.com/b590f622e8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
@@ -36,8 +37,15 @@
             <div class="contactContainer">
 
                 <div class="contactInfoContainer">
-                    <div class="socialIcons"></div>
-                    <div class="email"><a href="mailto:info@email.com"></a>info@email.com</div>
+                    <div class="socialIcons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="email"><a href="mailto:info@email.com">info@email.com</a></div>
                     <div class="address">
                         <p><a href="tel:+1234567890">123 - 456 - 7890</a>
                             <span>123 Queen Street West, Unit <span>10</span></span>
@@ -48,13 +56,19 @@
                 </div>
 
                 <form class="contactForm" action="#" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <label for="message">Your message</label>
-                    <input type="text" name="message" id="message" placeholder="Message">
-                    <button type="submit">Submit</button>
+                    <div class="contactInputContainer">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <textarea class="contactMessage" name="contactMessage" id="contactMessage"></textarea>
+                    <label class="messageLabel" for="message">Message</label>
+                    <button class="btn" type="submit">Submit</button>
                 </form>
             </div>
         </main>

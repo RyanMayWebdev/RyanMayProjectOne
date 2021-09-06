@@ -4,7 +4,7 @@ END NORMALIZE
 =======================*/
 @import 'variables';
 @import 'blog';
-
+@import 'contact';
 
 
 /*=====================
@@ -17,6 +17,19 @@ html {
 body {
     background: $backgroundPrimary;
 }
+
+.btn {
+    background-color: $buttonIconColour;
+    border: none;
+    color: $mainFontColour;
+    margin: 40px 0 50px;
+    padding: 5px 35px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: $mainHeaderAndAccent;
+}
+
 
 a {
     position: relative;
@@ -68,6 +81,16 @@ body {
     font-weight: normal;
 }
 
+label,
+textarea,
+input {
+    color: $mainFontColour;
+    font-size: 1.95rem;
+    font-weight: normal;
+    letter-spacing: 0.095rem;
+    line-height: 1.5rem;
+}
+
 h1,
 .logo,
 .btn {
@@ -108,7 +131,7 @@ h2 {
     margin: 0;
 }
 
-p {
+p, .email a {
     font-size: 1.95rem;
     font-weight: normal;
     line-height: 1.5rem;
@@ -184,16 +207,6 @@ header {
 /*=====================
 Main
 =======================*/
-.btn {
-    background-color: $buttonIconColour;
-    color: $mainFontColour;
-    margin: 40px 0 50px;
-    padding: 5px 35px;
-}
-
-.btn:hover, .btn:focus {
-    background-color: $mainHeaderAndAccent;
-}
 
 .centered,
 .flexContainer,

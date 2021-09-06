@@ -134,14 +134,6 @@ aside, .post, .commentForm, .inputSubContainer {
             flex-wrap: wrap;
             position: relative;
 
-            label,
-            .messageBox,
-            input {
-                font-size: 1.95rem;
-                font-weight: normal;
-                letter-spacing: 0.095rem;
-                line-height: 1.5rem;
-            }
 
             .btn {
                 border: none;
@@ -157,7 +149,7 @@ aside, .post, .commentForm, .inputSubContainer {
             .inputContainer {
                 justify-content: space-between;
                 margin: 30px 0;
-                width: 94%;
+                width: 95%;
 
                 .inputSubContainer {
                     width: 45%;
@@ -170,7 +162,6 @@ aside, .post, .commentForm, .inputSubContainer {
                         background-color: $backgroundPrimary;
                         border: none;
                         border-bottom: 1px solid $mainHeaderAndAccent;
-                        color: $mainFontColour;
                         width: 100%;
                     }
                 }
@@ -181,12 +172,11 @@ aside, .post, .commentForm, .inputSubContainer {
             .messageBox {
                 background-color: $backgroundPrimary;
                 border: 1px solid $mainHeaderAndAccent;
-                color: $mainFontColour;
                 height: 125px;
                 overflow: hidden;
-                padding: 75px 20px;
+                padding: 75px 0;
                 resize: none;
-                width: 90%;
+                width: 95%;
             }
 
             .messageBox:active,.messageBox:focus {
