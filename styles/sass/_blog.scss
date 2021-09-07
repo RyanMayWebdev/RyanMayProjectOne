@@ -139,13 +139,6 @@ aside, .post, .commentForm, .inputSubContainer {
                 border: none;
                 width: 95%;
             }
-
-            .commentLabel {
-                left: 20px;
-                position: absolute;
-                top: 175px;
-            }
-
             .inputContainer {
                 justify-content: space-between;
                 margin: 30px 0;
@@ -172,21 +165,17 @@ aside, .post, .commentForm, .inputSubContainer {
             .messageBox {
                 background-color: $backgroundPrimary;
                 border: 1px solid $mainHeaderAndAccent;
-                height: 125px;
+                height: 225px;
                 overflow: hidden;
-                padding: 75px 0;
+                padding: 25px 20px;
                 resize: none;
                 width: 95%;
             }
 
-            .messageBox:active,.messageBox:focus {
-                overflow: auto;
+            .messageBox::placeholder {
+                color: $mainFontColour;
             }
 
-            .messageBox:focus~.commentLabel,
-            .messageBox:active~.commentLabel {
-                display: none;
-            }
         }
     }
 }

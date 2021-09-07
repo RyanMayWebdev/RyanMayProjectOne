@@ -89,26 +89,18 @@
             }
         }
 
-        .messageLabel {
-            left: 80px;
-            position: absolute;
-            top: 220px;
-        }
 
         .contactMessage {
             background-color: $backgroundSecondary;
+            border: 1px solid $mainFontColour;
             height: 250px;
-            padding-top: 75px;
+            padding: 25px 20px;
             margin-bottom: 50px;
         }
 
-        .contactMessage:active,.contactMessage:focus {
-            overflow: auto;
+        .contactMessage::placeholder {
+            color: $mainFontColour;
         }
 
-        .contactMessage:focus ~ .messageLabel,
-        .contactMessage:active ~ .messageLabel {
-            display: none;
-        }
     }
 }

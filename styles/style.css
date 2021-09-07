@@ -184,6 +184,25 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*=====================
 END NORMALIZE
 =======================*/
@@ -318,11 +337,6 @@ aside, .post, .commentForm, .inputSubContainer {
   border: none;
   width: 95%;
 }
-.blogContainer .commentsContainer .commentForm .commentLabel {
-  left: 20px;
-  position: absolute;
-  top: 175px;
-}
 .blogContainer .commentsContainer .commentForm .inputContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -345,18 +359,26 @@ aside, .post, .commentForm, .inputSubContainer {
 .blogContainer .commentsContainer .commentForm .messageBox {
   background-color: #111010;
   border: 1px solid #ff8327;
-  height: 125px;
+  height: 225px;
   overflow: hidden;
-  padding: 75px 0;
+  padding: 25px 20px;
   resize: none;
   width: 95%;
 }
-.blogContainer .commentsContainer .commentForm .messageBox:active, .blogContainer .commentsContainer .commentForm .messageBox:focus {
-  overflow: auto;
+.blogContainer .commentsContainer .commentForm .messageBox::-webkit-input-placeholder {
+  color: #ffffff;
 }
-.blogContainer .commentsContainer .commentForm .messageBox:focus ~ .commentLabel,
-.blogContainer .commentsContainer .commentForm .messageBox:active ~ .commentLabel {
-  display: none;
+.blogContainer .commentsContainer .commentForm .messageBox::-moz-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox:-ms-input-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::-ms-input-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::placeholder {
+  color: #ffffff;
 }
 
 footer {
@@ -470,23 +492,27 @@ footer {
   border-bottom: 1px solid #ffffff;
   margin-top: -30px;
 }
-.contactContainer .contactForm .messageLabel {
-  left: 80px;
-  position: absolute;
-  top: 220px;
-}
 .contactContainer .contactForm .contactMessage {
   background-color: #220303;
+  border: 1px solid #ffffff;
   height: 250px;
-  padding-top: 75px;
+  padding: 25px 20px;
   margin-bottom: 50px;
 }
-.contactContainer .contactForm .contactMessage:active, .contactContainer .contactForm .contactMessage:focus {
-  overflow: auto;
+.contactContainer .contactForm .contactMessage::-webkit-input-placeholder {
+  color: #ffffff;
 }
-.contactContainer .contactForm .contactMessage:focus ~ .messageLabel,
-.contactContainer .contactForm .contactMessage:active ~ .messageLabel {
-  display: none;
+.contactContainer .contactForm .contactMessage::-moz-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage::-ms-input-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage::placeholder {
+  color: #ffffff;
 }
 
 /*=====================
@@ -569,7 +595,6 @@ input {
   font-size: 1.95rem;
   font-weight: normal;
   letter-spacing: 0.095rem;
-  line-height: 1.5rem;
 }
 
 h1,
