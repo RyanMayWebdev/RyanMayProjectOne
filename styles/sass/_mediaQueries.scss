@@ -124,20 +124,16 @@ NAV
             color: $mainHeaderAndAccent;
         }
 
-        .fas:hover ~ .mobileNavDropdown, .fas:focus ~ .mobileNavDropdown, .fas:focus-within ~ .mobileNavDropdown{
-                height: min-content;
-                width: 100px;
+        .fas:hover ~ .mobileNavDropdown, .fas:focus ~ .mobileNavDropdown, .fas:focus-within ~ .mobileNavDropdown, .mobileNavDropdown:focus-within{
+                height: 100%;
+                width: calc(25% + 40px);
                 opacity: 100;
         }
 
         .fas:hover .fas {
             content: "+";
         }
-        .mobileNavDropdown:focus-within{
-            height: min-content;
-            width: 100px;
-            opacity: 100;
-    }
+
     }
 
     /*=====================

@@ -324,9 +324,6 @@ aside, .post, .commentForm, .inputSubContainer {
   margin: 0;
 }
 .blogContainer .commentsContainer .commentForm {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
   width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .inputContainer {
@@ -445,7 +442,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
-  position: relative;
   width: 65%;
 }
 .contactContainer .contactForm .btn {
@@ -713,17 +709,18 @@ header {
 }
 
 .mobileNavDropdown {
+  background: linear-gradient(60deg, #00000091, #333333a6, #00000091);
   height: 1px;
   width: 1px;
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  right: 5px;
+  right: 0;
   -webkit-transition: height 0.5s, width 0.5s, opacity 0.5s;
   transition: height 0.5s, width 0.5s, opacity 0.5s;
 }
 .mobileNavDropdown li {
-  margin: 20px 0;
+  margin: 20px 0 20px 20px;
 }
 
 /*=====================
@@ -1053,22 +1050,13 @@ BLOG
 .mobileNav .fas:focus {
     color: #ff8327;
   }
-  .mobileNav .fas:hover ~ .mobileNavDropdown, .mobileNav .fas:focus ~ .mobileNavDropdown, .mobileNav .fas:focus-within ~ .mobileNavDropdown {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    width: 100px;
+  .mobileNav .fas:hover ~ .mobileNavDropdown, .mobileNav .fas:focus ~ .mobileNavDropdown, .mobileNav .fas:focus-within ~ .mobileNavDropdown, .mobileNav .mobileNavDropdown:focus-within {
+    height: 100%;
+    width: calc(25% + 40px);
     opacity: 100;
   }
   .mobileNav .fas:hover .fas {
     content: "+";
-  }
-  .mobileNav .mobileNavDropdown:focus-within {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    width: 100px;
-    opacity: 100;
   }
 
   /*=====================

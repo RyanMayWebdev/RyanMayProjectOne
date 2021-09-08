@@ -213,16 +213,18 @@ header {
 }
 
 .mobileNavDropdown {
+    background: linear-gradient(
+        60deg, #00000091, #333333a6, #00000091);
     height: 1px;
     width: 1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    right: 5px;
+    right: 0;
     transition: height 0.5s, width 0.5s, opacity 0.5s;
 
     li{
-        margin: 20px 0;
+        margin: 20px 0 20px 20px;
     }
 }
 /*=====================
