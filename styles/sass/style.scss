@@ -31,6 +31,9 @@ body {
     background-color: $mainHeaderAndAccent;
 }
 
+.home, .blog,.contact{
+    min-height: 620px;
+}
 
 a {
     position: relative;
