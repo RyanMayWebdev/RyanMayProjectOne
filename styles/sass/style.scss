@@ -26,7 +26,8 @@ body {
     padding: 5px 35px;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: $mainHeaderAndAccent;
 }
 
@@ -36,7 +37,8 @@ a {
     text-decoration: none;
 }
 
-nav a::after, aside a:after {
+nav a::after,
+aside a:after {
     border-bottom: 1px solid $mainHeaderAndAccent;
     content: "";
     height: 5px;
@@ -47,8 +49,9 @@ nav a::after, aside a:after {
     width: 0%;
 }
 
-a:hover::after, a:focus::after {
-    width:100%;
+a:hover::after,
+a:focus::after {
+    width: 100%;
 }
 
 img {
@@ -132,7 +135,8 @@ h2 {
     margin: 0;
 }
 
-p, .email a {
+p,
+.email a {
     font-size: 1.95rem;
     font-weight: normal;
     line-height: 1.5rem;
@@ -245,15 +249,21 @@ ABOUT
 }
 
 
-.textContainer .fas {
-    background: $buttonIconColour;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 1.3rem;
-    margin: 0 20px 0 0;
-    padding: 0.5rem;
-    text-align: center;
-    width: 30px;
+.textContainer {
+
+    .fas {
+        background: $buttonIconColour;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 1.3rem;
+        margin: 0 20px 0 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .fa-file {
+        padding: 0.5rem 0.65rem;
+    }
 }
 
 /*=====================

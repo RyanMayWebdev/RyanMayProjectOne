@@ -198,11 +198,6 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /*=====================
 END NORMALIZE
 =======================*/
@@ -534,7 +529,8 @@ body {
   padding: 5px 35px;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #ff8327;
 }
 
@@ -543,7 +539,8 @@ a {
   text-decoration: none;
 }
 
-nav a::after, aside a:after {
+nav a::after,
+aside a:after {
   border-bottom: 1px solid #ff8327;
   content: "";
   height: 5px;
@@ -555,7 +552,8 @@ nav a::after, aside a:after {
   width: 0%;
 }
 
-a:hover::after, a:focus::after {
+a:hover::after,
+a:focus::after {
   width: 100%;
 }
 
@@ -634,7 +632,8 @@ h2 {
   margin: 0;
 }
 
-p, .email a {
+p,
+.email a {
   font-size: 1.95rem;
   font-weight: normal;
   line-height: 1.5rem;
@@ -772,7 +771,9 @@ ABOUT
   margin: 0 20px 0 0;
   padding: 0.5rem;
   text-align: center;
-  width: 30px;
+}
+.textContainer .fa-file {
+  padding: 0.5rem 0.65rem;
 }
 
 /*=====================
@@ -940,9 +941,9 @@ BLOG
 
   .blogContainer {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .blogContainer aside {
     margin: 0;

@@ -196,9 +196,3 @@ input::-moz-focus-inner {
     clip: rect(00 0 0);
     overflow: hidden;
 }
-
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
