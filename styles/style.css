@@ -1159,6 +1159,9 @@ BLOG
   .blogContainer aside .asideText ul {
     width: 90%;
   }
+  .blogContainer .rightContainer .post .blogMainImage {
+    left: 0px;
+  }
   .blogContainer .rightContainer .post .postText {
     padding: 20px;
   }
@@ -1202,6 +1205,11 @@ BLOG
     text-align: center;
   }
 
+  .contactContainer .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 20px;
+  }
   .contactContainer .contactForm .contactInputContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

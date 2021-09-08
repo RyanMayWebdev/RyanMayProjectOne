@@ -249,6 +249,9 @@ BLOG
 
         .rightContainer {
             .post {
+                .blogMainImage {
+                    left: 0px;
+                }
                 .postText {
                     padding: 20px;
                 }
@@ -302,6 +305,8 @@ CONTACT
 
     .contactContainer {
         .contactForm {
+            box-shadow: none;
+            padding: 20px;
             .contactInputContainer {
                 flex-direction: column;
 
