@@ -123,6 +123,21 @@ NAV
         .fas:focus {
             color: $mainHeaderAndAccent;
         }
+
+        .fas:hover ~ .mobileNavDropdown, .fas:focus ~ .mobileNavDropdown, .fas:focus-within ~ .mobileNavDropdown{
+                height: min-content;
+                width: 100px;
+                opacity: 100;
+        }
+
+        .fas:hover .fas {
+            content: "+";
+        }
+        .mobileNavDropdown:focus-within{
+            height: min-content;
+            width: 100px;
+            opacity: 100;
+    }
     }
 
     /*=====================

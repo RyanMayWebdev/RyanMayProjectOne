@@ -327,9 +327,6 @@ aside, .post, .commentForm, .inputSubContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-}
-.blogContainer .commentsContainer .commentForm .btn {
-  border: none;
   width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .inputContainer {
@@ -337,7 +334,6 @@ aside, .post, .commentForm, .inputSubContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 30px 0;
-  width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
   width: 45%;
@@ -355,10 +351,7 @@ aside, .post, .commentForm, .inputSubContainer {
   background-color: #111010;
   border: 1px solid #ff8327;
   height: 225px;
-  overflow: hidden;
   padding: 25px 20px;
-  resize: none;
-  width: 95%;
 }
 .blogContainer .commentsContainer .commentForm .messageBox::-webkit-input-placeholder {
   color: #ffffff;
@@ -641,7 +634,7 @@ p,
   margin: 0;
 }
 
-.desktopNav li a {
+.desktopNav li a, .mobileNavDropdown a {
   color: #ffffff;
   font-size: 1.9rem;
   line-height: 1.45rem;
@@ -713,6 +706,20 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.mobileNavDropdown {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  -webkit-transition: height 0.5s, width 0.5s, opacity 0.5s;
+  transition: height 0.5s, width 0.5s, opacity 0.5s;
+}
+.mobileNavDropdown li {
+  margin: 20px 0;
 }
 
 /*=====================
@@ -1041,6 +1048,23 @@ BLOG
   .mobileNav .fas:hover,
 .mobileNav .fas:focus {
     color: #ff8327;
+  }
+  .mobileNav .fas:hover ~ .mobileNavDropdown, .mobileNav .fas:focus ~ .mobileNavDropdown, .mobileNav .fas:focus-within ~ .mobileNavDropdown {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 100px;
+    opacity: 100;
+  }
+  .mobileNav .fas:hover .fas {
+    content: "+";
+  }
+  .mobileNav .mobileNavDropdown:focus-within {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 100px;
+    opacity: 100;
   }
 
   /*=====================

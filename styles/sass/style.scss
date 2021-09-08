@@ -144,7 +144,7 @@ p,
     margin: 0;
 }
 
-.desktopNav li a {
+.desktopNav li a, .mobileNavDropdown a {
     color: $mainFontColour;
     font-size: 1.9rem;
     line-height: 1.45rem;
@@ -209,6 +209,19 @@ header {
     flex-direction: column;
 }
 
+.mobileNavDropdown {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    transition: height 0.5s, width 0.5s, opacity 0.5s;
+
+    li{
+        margin: 20px 0;
+    }
+}
 /*=====================
 Main
 =======================*/

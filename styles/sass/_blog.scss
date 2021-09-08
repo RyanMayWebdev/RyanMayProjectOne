@@ -133,16 +133,12 @@ aside, .post, .commentForm, .inputSubContainer {
         .commentForm {
             flex-wrap: wrap;
             position: relative;
+            width: 95%;
 
 
-            .btn {
-                border: none;
-                width: 95%;
-            }
             .inputContainer {
                 justify-content: space-between;
                 margin: 30px 0;
-                width: 95%;
 
                 .inputSubContainer {
                     width: 45%;
@@ -166,10 +162,7 @@ aside, .post, .commentForm, .inputSubContainer {
                 background-color: $backgroundPrimary;
                 border: 1px solid $mainHeaderAndAccent;
                 height: 225px;
-                overflow: hidden;
                 padding: 25px 20px;
-                resize: none;
-                width: 95%;
             }
 
             .messageBox::placeholder {
