@@ -3,13 +3,10 @@
 END NORMALIZE
 =======================*/
 @import 'variables';
-@import 'blog';
-@import 'contact';
-
 
 /*=====================
 GLOBALS
-=======================*/
+=======================*/ 
 html {
     font-size: 125%;
 }
@@ -94,7 +91,7 @@ input {
     font-size: 1.95rem;
     font-weight: normal;
     letter-spacing: 0.095rem;
-
+ 
 }
 
 
@@ -155,243 +152,6 @@ p,
     text-align: center;
 }
 
-/*=====================
-HEADER
-=======================*/
-.mobileNav {
-    display: none;
-}
-
-.desktopNav li:nth-child(3) {
-    align-self: flex-start;
-}
-
-.navContainer {
-    display: flex;
-    align-items: center;
-    height: 115px;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    width: 75%;
-}
-
-header {
-    margin-bottom: 200px;
-}
-
-.home {
-    background: url($mainHeaderImage) center;
-    background-size: cover;
-    height: 700px;
-
-    h1 {
-        align-self: center;
-        margin: 220px 0 0 0;
-        z-index: 5;
-
-        span {
-            display: block;
-            margin: -70px 6px;
-        }
-    }
-
-    li:nth-of-type(1) a {
-        color: $mainHeaderAndAccent;
-    }
-
-}
-
-
-.headerImgBox {
-    align-self: flex-end;
-    margin-top: -270px;
-}
-
-.titleContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.mobileNavDropdown {
-    background: linear-gradient(
-        60deg, #00000091, #333333a6, #00000091);
-    height: 1px;
-    width: 1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    transition: height 0.5s, width 0.5s, opacity 0.5s;
-
-    li{
-        margin: 20px 0 20px 20px;
-    }
-}
-/*=====================
-Main
-=======================*/
-
-.centered,
-.flexContainer,
-.rightTextContainer,
-.leftTextContainer,
-.textContainer,
-.events,
-.textContent,
-.gallery,
-.galleryContainer {
-    display: flex;
-}
-
-.colouredBackground,
-.rightTextContainer,
-.leftTextContainer,
-.textContent {
-    flex-direction: column;
-}
-
-/*=====================
-ABOUT
-=======================*/
-.flexContainer {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 100px auto;
-    width: 80%;
-}
-
-.textContainer {
-    align-items: baseline;
-    margin: 40px 0;
-    width: 50%;
-}
-
-
-.textContainer {
-
-    .fas {
-        background: $buttonIconColour;
-        border-radius: 50%;
-        display: inline-block;
-        font-size: 1.3rem;
-        margin: 0 20px 0 0;
-        padding: 0.5rem;
-        text-align: center;
-    }
-
-    .fa-file {
-        padding: 0.5rem 0.65rem;
-    }
-}
-
-/*=====================
-PLANNING
-=======================*/
-.colouredBackground {
-    background-color: $backgroundSecondary;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-}
-
-.imageLeft,
-.imageRight {
-    position: absolute;
-    width: 40%;
-}
-
-.imageLeft {
-    margin-bottom: 75px;
-    top: -30px;
-
-    img {
-        box-shadow: 25px 25px $mainHeaderAndAccent;
-    }
-}
-
-.imageRight {
-    bottom: -30px;
-    right: 0;
-
-    img {
-        box-shadow: -25px 25px $mainHeaderAndAccent;
-    }
-}
-
-.rightTextContainer,
-.leftTextContainer {
-    justify-content: center;
-    width: 33%;
-}
-
-.leftTextContainer {
-    align-items: flex-end;
-    align-self: flex-start;
-    margin: 0 115px 25px;
-    text-align: end;
-}
-
-.rightTextContainer {
-    align-items: flex-start;
-    align-self: flex-end;
-    margin: 100px 115px 50px;
-}
-
-/*=====================
-EVENTS
-=======================*/
-.centered {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto 100px;
-    text-align: center;
-    width: 70%;
-}
-
-.colouredHeader {
-    color: $mainHeaderAndAccent;
-    margin: 30px;
-}
-
-.events {
-    justify-content: space-between;
-    margin: 100px auto;
-    width: 80%;
-}
-
-.smallLeftImage {
-    img {
-        box-shadow: -25px 25px $mainHeaderAndAccent;
-    }
-}
-
-.textContent {
-    align-items: flex-start;
-    margin-left: 95px;
-    width: 65%;
-
-    h2 {
-        margin: -15px 0 5px;
-    }
-}
-
-/*=====================
-GALLERY
-=======================*/
-
-.gallery {
-    align-items: center;
-}
-
-.galleryContainer {
-    justify-content: space-evenly;
-    margin: 100px 0;
-    width: 88%;
-
-    img {
-        width: 30%;
-    }
-}
 
 /*=====================
 FOOTER
@@ -407,7 +167,19 @@ footer {
 }
 
 /*=====================
+BLOG PAGE
+=======================*/
+@import 'blog';
+/*=====================
+CONTACT PAGE
+=======================*/
+@import 'contact';
+/*=====================
+MAIN PAGE
+=======================*/
+@import 'mainPage';
+
+/*=====================
 MEDIA QUERIES
 =======================*/
-
-@import 'mediaQueries';
+@import 'mediaQueries';  

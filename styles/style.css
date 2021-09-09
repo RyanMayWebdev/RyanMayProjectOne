@@ -201,304 +201,6 @@ input::-moz-focus-inner {
 /*=====================
 END NORMALIZE
 =======================*/
-.blog {
-  background: url(./../assets/blog-header-1.jpg) center;
-  background-size: cover;
-  height: 50vh;
-  margin-bottom: -200px;
-}
-.blog h1 {
-  font-family: "Chathura", sans-serif;
-  font-size: 6.7rem;
-  font-weight: normal;
-  margin: 30px 0 0 70px;
-}
-.blog .desktopNav li:nth-of-type(4) a {
-  color: #ff8327;
-}
-
-.blogContainer, aside, .post, .comment, .commentForm, .inputContainer, .inputSubContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-aside, .post, .commentForm, .inputSubContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.blogContainer aside {
-  background-color: #220303;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
-  height: 50%;
-  margin: 350px 100px 0 75px;
-}
-.blogContainer aside .asideImage {
-  position: relative;
-  right: 80px;
-  top: -20px;
-  width: 110%;
-}
-.blogContainer aside .asideText {
-  padding: 0 0 30px 30px;
-}
-.blogContainer aside .asideText a {
-  color: #ff8327;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-}
-.blogContainer aside .asideText ul {
-  color: #bf2603;
-  list-style: disc;
-  padding-left: 30px;
-}
-.blogContainer aside .asideText ul p {
-  color: #ffffff;
-  font-size: 1.95rem;
-}
-.blogContainer aside div {
-  width: 80%;
-}
-.blogContainer .rightContainer {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
-}
-.blogContainer .rightContainer .post {
-  -webkit-box-shadow: -5px 5px #ff8327;
-          box-shadow: -5px 5px #ff8327;
-  position: relative;
-  top: 30px;
-}
-.blogContainer .rightContainer .post .blogMainImage {
-  -webkit-box-shadow: -20px 20px #ff8327;
-          box-shadow: -20px 20px #ff8327;
-  left: 15px;
-  position: relative;
-  top: -25px;
-}
-.blogContainer .rightContainer .post .postText {
-  padding: 110px 100px 80px;
-}
-.blogContainer .rightContainer .post .postText h3 {
-  color: #ff8327;
-  font-size: 1.95rem;
-  margin: -10px 0 20px;
-}
-.blogContainer .rightContainer .post .postText p {
-  margin-bottom: 30px;
-}
-.blogContainer .commentsContainer {
-  margin: 80px auto;
-  width: 85%;
-}
-.blogContainer .commentsContainer h2 {
-  margin: 0 0 0 10px;
-}
-.blogContainer .commentsContainer .comment {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 50px 0;
-}
-.blogContainer .commentsContainer .comment .profileImage {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 12.5%;
-          flex: 0 0 12.5%;
-}
-.blogContainer .commentsContainer .comment .commentText {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 80%;
-          flex: 0 1 80%;
-  margin: -15px 0 0 20px;
-}
-.blogContainer .commentsContainer .comment .commentText h3 {
-  color: #ff8327;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  margin: 0;
-}
-.blogContainer .commentsContainer .commentForm {
-  width: 95%;
-}
-.blogContainer .commentsContainer .commentForm .inputContainer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 30px 0;
-}
-.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
-  width: 45%;
-}
-.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer label {
-  margin-left: 20px;
-}
-.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer input {
-  background-color: #111010;
-  border: none;
-  border-bottom: 1px solid #ff8327;
-  width: 100%;
-}
-.blogContainer .commentsContainer .commentForm .messageBox {
-  background-color: #111010;
-  border: 1px solid #ff8327;
-  height: 225px;
-  padding: 25px 20px;
-}
-.blogContainer .commentsContainer .commentForm .messageBox::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.blogContainer .commentsContainer .commentForm .messageBox::-moz-placeholder {
-  color: #ffffff;
-}
-.blogContainer .commentsContainer .commentForm .messageBox:-ms-input-placeholder {
-  color: #ffffff;
-}
-.blogContainer .commentsContainer .commentForm .messageBox::-ms-input-placeholder {
-  color: #ffffff;
-}
-.blogContainer .commentsContainer .commentForm .messageBox::placeholder {
-  color: #ffffff;
-}
-
-footer {
-  position: relative;
-}
-
-.contact {
-  background: url(./../assets/contact-header-1.jpg) center;
-  background-size: cover;
-  height: 50vh;
-  margin-bottom: -180px;
-}
-.contact h1 {
-  font-family: "Chathura", sans-serif;
-  font-size: 6.7rem;
-  font-weight: normal;
-  margin: 150px 0 0 70px;
-}
-.contact .desktopNav li:nth-of-type(5) a {
-  color: #ff8327;
-}
-
-.contactContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto 200px;
-  width: 90%;
-}
-.contactContainer .contactInfoContainer {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 75px;
-  width: 25%;
-}
-.contactContainer .contactInfoContainer span {
-  display: block;
-}
-.contactContainer .contactInfoContainer a {
-  color: #ffffff;
-}
-.contactContainer .contactInfoContainer a:hover, .contactContainer .contactInfoContainer a:focus {
-  color: #ff8327;
-}
-.contactContainer .contactInfoContainer .email {
-  margin: 20px 0;
-}
-.contactContainer .contactInfoContainer .socialIcons ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 45%;
-}
-.contactContainer .contactForm {
-  background-color: #220303;
-  -webkit-box-shadow: 25px 25px #ff8327;
-          box-shadow: 25px 25px #ff8327;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 50px;
-  width: 65%;
-}
-.contactContainer .contactForm .btn {
-  margin: 0;
-}
-.contactContainer .contactForm .contactInputContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 30px 0;
-}
-.contactContainer .contactForm .contactInputContainer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 30px;
-  width: 48%;
-}
-.contactContainer .contactForm .contactInputContainer div label {
-  margin-left: 30px;
-}
-.contactContainer .contactForm .contactInputContainer div input {
-  background-color: #ffffff00;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  margin-top: -30px;
-}
-.contactContainer .contactForm .contactMessage {
-  background-color: #220303;
-  border: 1px solid #ffffff;
-  height: 250px;
-  padding: 25px 20px;
-  margin-bottom: 50px;
-}
-.contactContainer .contactForm .contactMessage::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.contactContainer .contactForm .contactMessage::-moz-placeholder {
-  color: #ffffff;
-}
-.contactContainer .contactForm .contactMessage:-ms-input-placeholder {
-  color: #ffffff;
-}
-.contactContainer .contactForm .contactMessage::-ms-input-placeholder {
-  color: #ffffff;
-}
-.contactContainer .contactForm .contactMessage::placeholder {
-  color: #ffffff;
-}
-
 /*=====================
 GLOBALS
 =======================*/
@@ -643,10 +345,334 @@ p,
 }
 
 /*=====================
+FOOTER
+=======================*/
+footer {
+  background-color: #252525;
+  margin: 0;
+  text-align: center;
+}
+footer p {
+  line-height: normal;
+}
+
+/*=====================
+BLOG PAGE
+=======================*/
+.blog {
+  background: url(./../assets/blog-header-1.jpg) center;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: -200px;
+}
+.blog h1 {
+  font-family: "Chathura", sans-serif;
+  font-size: 6.7rem;
+  font-weight: normal;
+  margin: 30px 0 0 70px;
+}
+
+.blog .desktopNav li:nth-of-type(4) a, h3, a {
+  color: #ff8327;
+}
+
+.blogContainer, aside, .post, .comment, .commentForm, .inputContainer, .inputSubContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside, .post, .commentForm, .inputSubContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogContainer aside {
+  background-color: #220303;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  height: 50%;
+  margin: 350px 100px 0 75px;
+}
+.blogContainer aside .asideImage {
+  position: relative;
+  right: 80px;
+  top: -20px;
+  width: 110%;
+}
+.blogContainer aside .asideText {
+  padding: 0 0 30px 30px;
+}
+.blogContainer aside .asideText a {
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+}
+.blogContainer aside .asideText ul {
+  color: #bf2603;
+  list-style: disc;
+  padding-left: 30px;
+}
+.blogContainer aside .asideText ul p {
+  color: #ffffff;
+  font-size: 1.95rem;
+}
+.blogContainer aside div {
+  width: 80%;
+}
+.blogContainer .rightContainer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+.blogContainer .rightContainer .post {
+  -webkit-box-shadow: -5px 5px #ff8327;
+          box-shadow: -5px 5px #ff8327;
+  position: relative;
+  top: 30px;
+}
+.blogContainer .rightContainer .post .blogMainImage {
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
+  left: 15px;
+  position: relative;
+  top: -25px;
+}
+.blogContainer .rightContainer .post .postText {
+  padding: 110px 100px 80px;
+}
+.blogContainer .rightContainer .post .postText h3 {
+  font-size: 1.95rem;
+  margin: -10px 0 20px;
+}
+.blogContainer .rightContainer .post .postText p {
+  margin-bottom: 30px;
+}
+.blogContainer .commentsContainer {
+  margin: 80px auto;
+  width: 85%;
+}
+.blogContainer .commentsContainer h2 {
+  margin: 0 0 0 10px;
+}
+.blogContainer .commentsContainer .comment {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 0;
+}
+.blogContainer .commentsContainer .comment .profileImage {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%;
+}
+.blogContainer .commentsContainer .comment .commentText {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+  margin: -15px 0 0 20px;
+}
+.blogContainer .commentsContainer .comment .commentText h3 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.blogContainer .commentsContainer .commentForm {
+  width: 95%;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer {
+  width: 45%;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer label {
+  margin-left: 20px;
+}
+.blogContainer .commentsContainer .commentForm .inputContainer .inputSubContainer input {
+  background-color: #111010;
+  border: none;
+  border-bottom: 1px solid #ff8327;
+  width: 100%;
+}
+.blogContainer .commentsContainer .commentForm .messageBox {
+  background-color: #111010;
+  border: 1px solid #ff8327;
+  height: 225px;
+  padding: 25px 20px;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::-moz-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox:-ms-input-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::-ms-input-placeholder {
+  color: #ffffff;
+}
+.blogContainer .commentsContainer .commentForm .messageBox::placeholder {
+  color: #ffffff;
+}
+
+footer {
+  position: relative;
+}
+
+/*=====================
+CONTACT PAGE
+=======================*/
+.contact {
+  background: url(./../assets/contact-header-1.jpg) center;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: -180px;
+}
+.contact h1 {
+  font-family: "Chathura", sans-serif;
+  font-size: 6.7rem;
+  font-weight: normal;
+  margin: 0 70px;
+  padding-top: 150px;
+}
+.contact .desktopNav li:nth-of-type(5) a {
+  color: #ff8327;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 200px;
+  width: 90%;
+}
+.contactContainer .contactInfoContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 75px;
+  width: 25%;
+}
+.contactContainer .contactInfoContainer span {
+  display: block;
+}
+.contactContainer .contactInfoContainer a {
+  color: #ffffff;
+}
+.contactContainer .contactInfoContainer a:hover, .contactContainer .contactInfoContainer a:focus {
+  color: #ff8327;
+}
+.contactContainer .contactInfoContainer .email {
+  margin: 20px 0;
+}
+.contactContainer .contactInfoContainer .socialIcons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+.contactContainer .contactForm {
+  background-color: #220303;
+  -webkit-box-shadow: 25px 25px #ff8327;
+          box-shadow: 25px 25px #ff8327;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  width: 65%;
+}
+.contactContainer .contactForm .btn {
+  margin: 0;
+}
+.contactContainer .contactForm .contactInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+.contactContainer .contactForm .contactInputContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  width: 48%;
+}
+.contactContainer .contactForm .contactInputContainer div label {
+  margin-left: 30px;
+}
+.contactContainer .contactForm .contactInputContainer div input {
+  background-color: #ffffff00;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: -30px;
+}
+.contactContainer .contactForm .contactMessage {
+  background-color: #220303;
+  border: 1px solid #ffffff;
+  height: 250px;
+  padding: 25px 20px;
+  margin-bottom: 50px;
+}
+.contactContainer .contactForm .contactMessage::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage::-moz-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage::-ms-input-placeholder {
+  color: #ffffff;
+}
+.contactContainer .contactForm .contactMessage::placeholder {
+  color: #ffffff;
+}
+
+/*=====================
+MAIN PAGE
+=======================*/
+/*=====================
 HEADER
 =======================*/
 .mobileNav {
   display: none;
+}
+.mobileNav div {
+  position: fixed;
+  right: 40px;
+  top: 35px;
+  z-index: 100;
 }
 
 .desktopNav li:nth-child(3) {
@@ -714,10 +740,11 @@ header {
   width: 1px;
   opacity: 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   right: 0;
   -webkit-transition: height 0.5s, width 0.5s, opacity 0.5s;
   transition: height 0.5s, width 0.5s, opacity 0.5s;
+  z-index: 100;
 }
 .mobileNavDropdown li {
   margin: 20px 0 20px 20px;
@@ -771,6 +798,9 @@ ABOUT
   width: 50%;
 }
 
+.textContainer i.fas {
+  max-width: 45px;
+}
 .textContainer .fas {
   background: #bf2603;
   border-radius: 50%;
@@ -781,7 +811,7 @@ ABOUT
   text-align: center;
 }
 .textContainer .fa-file {
-  padding: 0.5rem 0.65rem;
+  padding: 0.5rem 0.75rem;
 }
 
 /*=====================
@@ -911,18 +941,6 @@ GALLERY
 }
 
 /*=====================
-FOOTER
-=======================*/
-footer {
-  background-color: #252525;
-  margin: 0;
-  text-align: center;
-}
-footer p {
-  line-height: normal;
-}
-
-/*=====================
 MEDIA QUERIES
 =======================*/
 @media (max-width: 1000px) {
@@ -943,7 +961,8 @@ BLOG
     margin-bottom: 0;
   }
   .blog h1 {
-    margin: 100px 0;
+    margin: 0;
+    padding: 100px 0;
     text-align: center;
   }
 
@@ -980,6 +999,15 @@ BLOG
   /*=====================
   CONTACT
   =======================*/
+  .contact {
+    margin-bottom: -50px;
+  }
+  .contact h1 {
+    margin: 0;
+    padding-top: 150px;
+    text-align: center;
+  }
+
   .contactContainer {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1041,7 +1069,7 @@ BLOG
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 20px 0;
+    padding-top: 20px;
   }
   .mobileNav .logo {
     font-size: 2.5rem;
@@ -1200,7 +1228,8 @@ BLOG
   CONTACT
   =======================*/
   .contact h1 {
-    margin: 150px 0;
+    margin: 0;
+    padding-top: 150px;
     font-size: 5rem;
     text-align: center;
   }
