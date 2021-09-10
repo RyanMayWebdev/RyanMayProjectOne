@@ -5,7 +5,7 @@ Only the desktop view was provided and the mobile view was left for me to decide
 
 I used only HTML and SASS to develop this website as requested. 
 Each page has it's own partial, combined with a general styling partial and media query partial.
-This site is also fully responsive, featuring a animated dropdown mobile emnu done through css. 
+This site is also fully responsive and features an animated dropdown mobile menu done through css. 
 
 There were a few challenges in this project, such as the multiple offset images, which were overcome by either position: absolute or
 using a combo of flexbox, align-self and margin, depending on the situation.
