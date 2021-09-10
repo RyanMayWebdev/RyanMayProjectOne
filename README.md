@@ -16,3 +16,4 @@ and font size was set to 125% as a base or 20px.
 You can find the site live at https://projectone.ryanmaycodes.com/
 Below are the provided designs.
 
+![Design image for the main page of bar one](/assets/bar-home.png)
