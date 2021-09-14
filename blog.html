@@ -132,7 +132,7 @@
                             <div class="inputContainer">
                                 <div class="inputSubContainer">
                                     <label for="name">Name</label>
-                                    <input type="text" name="name" id="name">
+                                    <input type="text" name="name" id="name" required>
                                 </div>
                                 <div class="inputSubContainer">
                                     <label for="email">Email address</label>
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                             <label class="visuallyHidden" for="comment">Comment</label>
-                            <textarea class="messageBox" name="comment" id="comment" placeholder="Comment"></textarea>
+                            <textarea class="messageBox" name="comment" id="comment" placeholder="Comment" required></textarea>
                             <button class="btn" type="submit">Post Comment</button>
                         </form>
                     </div>
@@ -151,6 +151,7 @@
             <p>Copyright &copy 2021 Juno College</p>
         </footer>
     </div>
+    <script src="./src/app.js"></script>
 </body>
 
 </html>
