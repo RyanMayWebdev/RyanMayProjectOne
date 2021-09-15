@@ -23,5 +23,7 @@ form.addEventListener('submit', function(e) {
 const currentDate = () => {
     const date = new Date();
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString(undefined, options)
+    let dateString = date.toLocaleDateString(undefined, options)
+    dateString = dateString.replace(',','');
+    return dateString;
 }
