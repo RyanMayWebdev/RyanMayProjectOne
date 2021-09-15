@@ -2,8 +2,8 @@ const form = document.querySelector('.commentForm');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    const name = form.querySelector('#name').value;
-    const comment = form.querySelector('#comment').value;
+    const name = form.querySelector('#name');
+    const comment = form.querySelector('#comment');
     const newComment = document.createElement('article');
     newComment.innerHTML = `<article class="comment">
                                 <div class="profileImage"><img src="./assets/profile-default.jpg"alt="A profile image"></div>
@@ -15,9 +15,10 @@ form.addEventListener('submit', function(e) {
 
     const commentHeader = newComment.querySelector('h3');
     const commentParagraph = newComment.querySelector('p');
-    commentHeader.textContent = `${currentDate()} by ${name}`;
-    commentParagraph.textContent = comment;
+    commentHeader.textContent = `${currentDate()} by ${name.value}`;
+    commentParagraph.textContent = comment.value;
     form.insertAdjacentElement('beforebegin',newComment);
+    form.reset();
 })
 
 const currentDate = () => {
